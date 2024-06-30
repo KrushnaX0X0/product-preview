@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product preview</title>
+</head>
+<body>
+    <style>
+        .main-product-img{
+            height: 60vh;
+            border: 2px solid black;
+            display: block;
+            margin: 10px auto;
+            object-fit: cover;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow:0px 0px 20px 10px rgba(0,0,0,0.25);
+           
+           
+        }
+        .product-contioner{
+            display: flex;
+            justify-content: center;
+                  }
+        .product{
+            height: 8vh;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+    </style>
+    <img src="1.jpg" alt="" class="main-product-img" id="main-product-img">
+    <div class="product-contioner">
+        <img src="1.jpg" alt="" class="product" onclick="changeimge('1.jpg')">
+        <img src="2.jpg" alt="" class="product" onclick="changeimge('2.jpg')">
+        <img src="3.jpg" alt="" class="product" onclick="changeimge('3.jpg')">
+        <img src="4.jpg" alt="" class="product" onclick="changeimge('4.jpg')">
+        <img src="5.jpg" alt="" class="product" onclick="changeimge('5.jpg')">
+
+    </div>
+    <script>
+        function changeimge(imagename){
+            let mainimage = document.getElementById("main-product-img")
+            mainimage.src = imagename;
+
+
+        }
+    </script>
+    
+</body>
+</html>
